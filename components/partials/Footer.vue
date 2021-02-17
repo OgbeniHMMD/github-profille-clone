@@ -1,6 +1,6 @@
 <template>
-  <footer>
-    <div class="footer container" role="contentinfo">
+  <footer class="footer">
+    <div class="container flex">
       <div class="row">
         <div class="copyright">&copy; 2021 GitHub, Inc.</div>
         <div>
@@ -108,8 +108,6 @@
 
 <style scoped>
 .footer {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 3em 0;
   margin-top: 2em;

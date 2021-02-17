@@ -63,7 +63,7 @@
               width="16"
               height="16"
               aria-hidden="true"
-              style="margin-right: 0.5em"
+              style="margin-right: 0.4em"
             >
               <path
                 fill="grey"

@@ -3,7 +3,7 @@
     <partials-app-bar />
     <partials-nav-bar />
 
-    <section class="main-section">
+    <section class="container main-section">
       <repository-side-bar class="aside" />
       <repository-main-list class="main" />
     </section>
