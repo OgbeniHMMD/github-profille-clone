@@ -1,6 +1,7 @@
 <template>
   <main>
     <partials-app-bar />
+    <partials-nav-bar />
 
     <section class="main-section">
       <repository-side-bar class="aside" />
