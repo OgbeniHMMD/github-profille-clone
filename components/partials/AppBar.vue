@@ -34,11 +34,6 @@
   background-color: var(--black);
 }
 
-.flex {
-  display: flex;
-  align-items: center;
-}
-
 #signin {
   border: 0 !important;
 }

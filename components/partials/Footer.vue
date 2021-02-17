@@ -113,7 +113,7 @@
   justify-content: space-between;
   padding: 3em 0;
   margin-top: 2em;
-  border-top: 1px solid var(--grey);
+  border-top: 1px solid var(--border-color);
 }
 
 .footer .icon {
