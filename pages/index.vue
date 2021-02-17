@@ -18,10 +18,10 @@
 }
 
 .aside {
-  width: 20%;
+  width: 25%;
 }
 
 .main {
-  width: 80%;
+  width: 75%;
 }
 </style>
