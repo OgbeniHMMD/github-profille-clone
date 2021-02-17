@@ -1,0 +1,12 @@
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 1em !important;
+}

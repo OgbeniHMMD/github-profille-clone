@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'github-profile-clone',
+    title: 'OgbeniHMMD (Olajide A. Hammed)',
     htmlAttrs: {
       lang: 'en',
     },
@@ -20,7 +20,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['~/assets/importer.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
