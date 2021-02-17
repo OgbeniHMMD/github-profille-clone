@@ -1,9 +1,9 @@
 <template>
   <main>
-    <article v-for="i in 5" :key="i" class="repo-article">
+    <article v-for="repo in repos" :key="repo.id" class="repo-article">
       <div class=" ">
         <h3 class="title">
-          <a href="/OgbeniHMMD/chat-app"> chat-app</a>
+          <a :href="html_url"> {{ repo.name }}</a>
         </h3>
 
         <div></div>
@@ -110,6 +110,32 @@
     </article>
   </main>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      USERNAME: 'OgbeniHMMD',
+      repos: [],
+    }
+  },
+
+  async created() {
+    const URI = `/users/${this.USERNAME}/repos`
+    await this.$axios
+      .$get(URI)
+      .then((response) => {
+        console.log(response)
+        this.repos = response
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+  },
+
+  methods: {},
+}
+</script>
 
 <style scoped>
 .repo-article {
