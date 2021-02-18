@@ -87,23 +87,42 @@ export default {
     return {
       USERNAME: 'OgbeniHMMD',
       repos: [],
+      userData: [],
     }
   },
 
-  async created() {
-    const URI = `/users/${this.USERNAME}/repos`
-    await this.$axios
-      .$get(URI)
-      .then((response) => {
-        console.log(response)
-        this.repos = response
-      })
-      .catch((error) => {
-        console.log(error)
-      })
+  created() {
+    this.fetchUserInfo()
+    this.fetchRepos()
   },
 
-  methods: {},
+  methods: {
+    async fetchUserInfo() {
+      const URI = `/users/${this.USERNAME}/repos`
+      await this.$axios
+        .$get(URI)
+        .then((response) => {
+          console.log(response)
+          this.repos = response
+        })
+        .catch((error) => {
+          console.log(error)
+        })
+    },
+
+    async fetchRepos() {
+      const URI = `/users/${this.USERNAME}/repos`
+      await this.$axios
+        .$get(URI)
+        .then((response) => {
+          console.log(response)
+          this.repos = response
+        })
+        .catch((error) => {
+          console.log(error)
+        })
+    },
+  },
 }
 </script>
 
